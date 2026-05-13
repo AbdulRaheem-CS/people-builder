@@ -53,7 +53,6 @@ export function Footer() {
           <div className="text-sm text-background/60">
             <Squiggle className="w-20 h-4 text-primary mb-2" />
             <p>© 2026 People Builders. All rights reserved.</p>
-            <p className="mt-1">Made with ♥ &amp; coffee.</p>
           </div>
         </motion.div>
       </div>
