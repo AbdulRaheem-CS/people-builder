@@ -14,5 +14,13 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
-  plugins: [nitro({ preset: "vercel-edge" })],
+  plugins: [
+    nitro({
+      preset: "vercel",
+      vercel: {
+        functions: { runtime: "edge" },
+        entryFormat: "web",
+      },
+    }),
+  ],
 });
